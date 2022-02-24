@@ -1,0 +1,159 @@
+package com.matrimony.bd.Activity;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkCapabilities;
+import android.net.NetworkInfo;
+import android.os.Build;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.ismaeldivita.chipnavigation.ChipNavigationBar;
+import com.matrimony.bd.BottomSheets.BottomSheetMore;
+import com.matrimony.bd.Fragments.FragmentFavourite;
+import com.matrimony.bd.Fragments.FragmentHome;
+import com.matrimony.bd.Fragments.FragmentProfile;
+import com.matrimony.bd.R;
+
+
+public class MainActivity extends AppCompatActivity {
+
+    ImageView settings;
+    ChipNavigationBar bottomNav;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        settings = findViewById(R.id.settings);
+        bottomNav = findViewById(R.id.bottomNav);
+        bottomNav.setItemSelected(R.id.nav_home, true);
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new FragmentHome()).commit();
+        }
+        bottomNav.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(int i) {
+                Fragment selectedFragment = null;
+                switch (i) {
+                    case R.id.nav_home:
+                        selectedFragment = new FragmentHome();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                selectedFragment).commit();
+                        break;
+                    case R.id.nav_fav:
+                        selectedFragment = new FragmentFavourite();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                selectedFragment).commit();
+                        break;
+
+                    case R.id.nav_profile:
+                        selectedFragment = new FragmentProfile();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                selectedFragment).commit();
+                        break;
+
+                    case R.id.nav_more:
+                        BottomSheetMore bottomSheetMore = new BottomSheetMore();
+                        bottomSheetMore.show(getSupportFragmentManager(), "More");
+                        break;
+                }
+            }
+        });
+
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent settings = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(settings);
+            }
+        });
+
+    //
+if(!isNetworkAvailable()==true)
+    {
+        new AlertDialog.Builder(this)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle("Internet Connection Alert")
+                .setMessage("Please Check Your Internet Connection")
+                .setPositiveButton("Close", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                    }
+                }).show();
+    }
+        else if(isNetworkAvailable()==true)
+    {
+        Toast.makeText(MainActivity.this,
+                "Internet Connection ok!", Toast.LENGTH_LONG).show();
+    }
+
+}
+
+    public boolean isNetworkAvailable() {
+
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        if (connectivityManager != null) {
+
+
+            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                NetworkCapabilities capabilities = connectivityManager.getNetworkCapabilities(connectivityManager.getActiveNetwork());
+                if (capabilities != null) {
+                    if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+
+                        return true;
+                    } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)) {
+
+                        return true;
+                    } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)) {
+
+                        return true;
+                    }
+                }
+            }
+        }
+
+        return false;
+
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setTitle(R.string.app_name);
+        builder.setIcon(R.mipmap.ic_launcher);
+        builder.setMessage("Do you want to exit?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();}
+        @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+
+    }
