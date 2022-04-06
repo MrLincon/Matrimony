@@ -2,11 +2,15 @@ package com.matrimony.bd.Activity;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
@@ -29,18 +33,26 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView settings;
     ChipNavigationBar bottomNav;
+
+    Dialog popup;
+    CardView Exit;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         settings = findViewById(R.id.settings);
         bottomNav = findViewById(R.id.bottomNav);
+
+        popup = new Dialog(MainActivity.this);
+
         bottomNav.setItemSelected(R.id.nav_home, true);
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new FragmentHome()).commit();
         }
+
         bottomNav.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
             @Override
             public void onItemSelected(int i) {
@@ -71,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        popup.setContentView(R.layout.popup_exit);
+        popup.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Exit = popup.findViewById(R.id.card_exit);
 
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,27 +95,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    //
-if(!isNetworkAvailable()==true)
-    {
-        new AlertDialog.Builder(this)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .setTitle("Internet Connection Alert")
-                .setMessage("Please Check Your Internet Connection")
-                .setPositiveButton("Close", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        finish();
-                    }
-                }).show();
-    }
-        else if(isNetworkAvailable()==true)
-    {
-        Toast.makeText(MainActivity.this,
-                "Internet Connection ok!", Toast.LENGTH_LONG).show();
-    }
+        //
+        if (!isNetworkAvailable() == true) {
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle("Internet Connection Alert")
+                    .setMessage("Please Check Your Internet Connection")
+                    .setPositiveButton("Close", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            finish();
+                        }
+                    }).show();
+        } else if (isNetworkAvailable() == true) {
+//        Toast.makeText(MainActivity.this,
+//                "Internet Connection ok!", Toast.LENGTH_LONG).show();
+        }
 
-}
+    }
 
     public boolean isNetworkAvailable() {
 
@@ -133,27 +145,19 @@ if(!isNetworkAvailable()==true)
     @Override
     public void onBackPressed() {
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setTitle(R.string.app_name);
-        builder.setIcon(R.mipmap.ic_launcher);
-        builder.setMessage("Do you want to exit?")
-                .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        finish();
-                    }
-                })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                });
-        AlertDialog alert = builder.create();
-        alert.show();}
-        @Override
+        popup.show();
+        Exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
     }
 
 
-    }
+}

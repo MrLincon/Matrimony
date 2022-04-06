@@ -3,8 +3,9 @@
     package="com.matrimony.bd">
     <!-- Internet permission -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,16 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Matrimony">
         <activity
+            android:name=".Authentication.PhoneLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CompleteProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.AboutusActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.ContactActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.tutorial.TutorialActivity"
+            android:name=".Activity.Tutorial.TutorialActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.qna.QNAActivity"
+            android:name=".Activity.QnA.QNAActivity"
             android:exported="false" />
         <activity
             android:name=".Authentication.SignInActivity"
@@ -40,6 +50,7 @@
         <activity
             android:name=".Activity.MainActivity"
             android:exported="true" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

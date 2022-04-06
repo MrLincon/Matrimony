@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:gravity="center"
+                    android:text="Update Profile"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp"></TextView>
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_arrow_left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/colorCard">
+
+                <com.shuhart.stepview.StepView
+                    android:id="@+id/step_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    app:sv_nextStepCircleEnabled="true"
+                    app:sv_stepLineWidth="1dp"
+                    app:sv_stepNumberTextSize="8sp"
+                    app:sv_selectedCircleRadius="8dp"
+                    app:sv_doneCircleRadius="8dp"
+                    app:sv_nextStepCircleColor="@color/colorGreenLite"
+                    app:sv_doneCircleColor="@color/colorGreen"
+                    app:sv_nextStepLineColor="@color/colorGreenLite"
+                    app:sv_doneStepLineColor="@color/colorGreen"
+                    app:sv_doneStepMarkColor="@color/colorWhite"
+                    app:sv_nextTextColor="@color/colorOffWhite"
+                    app:sv_selectedCircleColor="@color/colorGreen"
+                    app:sv_selectedStepNumberColor="@color/colorWhite"
+                    app:sv_stepViewStyle="@style/StepView"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/next"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"></TextView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

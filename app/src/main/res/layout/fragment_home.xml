@@ -45,7 +45,7 @@
                 android:fontFamily="@font/ubuntu_medium"
                 android:hint="বায়োডাটা নং"
                 android:textColor="@color/colorWhite"
-                android:textColorHint="#C6C6C6"
+                android:textColorHint="@color/colorWhite"
                 android:textSize="18sp"
                 android:background="@null"
                 app:layout_constraintBottom_toBottomOf="parent"

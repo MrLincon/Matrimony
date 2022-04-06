@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorCard"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg_colorOfBody"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/biodata1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="উজ্জ্বল ফর্সা"
+                    android:paddingLeft="24dp"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="উজ্জ্বল শ্যামলা"
+                    android:paddingLeft="24dp"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="কালো"
+                    android:paddingLeft="24dp"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="ফর্সা"
+                    android:paddingLeft="24dp"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="শ্যামলা"
+                    android:paddingLeft="24dp"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"></RadioButton>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

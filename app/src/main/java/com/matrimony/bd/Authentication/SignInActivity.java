@@ -51,7 +51,6 @@ public class SignInActivity extends AppCompatActivity {
 
     //Google Auth
     private CardView signInGoogle, signInPhone;
-    private CardView signInProgress;
     private FirebaseAuth mAuth;
     private GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN = 1;
@@ -112,6 +111,14 @@ public class SignInActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent signInIntent = mGoogleSignInClient.getSignInIntent();
                 startActivityForResult(signInIntent, RC_SIGN_IN);
+            }
+        });
+
+        signInPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent signInIntent = new Intent(SignInActivity.this, PhoneLoginActivity.class);
+                startActivity(signInIntent);
             }
         });
 
@@ -197,7 +204,6 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     private void firebaseAuthWithGoogle(String idToken) {
-        signInProgress.setVisibility(View.VISIBLE);
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
 
         mAuth.signInWithCredential(credential)

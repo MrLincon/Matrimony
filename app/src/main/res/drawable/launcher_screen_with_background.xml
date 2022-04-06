@@ -5,6 +5,6 @@
     <!--Also available: @drawable:launcher_screen_with_logo-->
 
     <!--Full screen Background Image of your Splash Screen-->
-    <item android:drawable="@drawable/splash_background" />
-
+<!--    <item android:drawable="@drawable/splash_background" />-->
+        <item android:drawable="@color/colorWhite" />
 </layer-list>

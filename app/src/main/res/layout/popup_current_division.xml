@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorCard"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="6dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rg_currentDivision"
+                    android:paddingLeft="16dp">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="ঢাকা বিভাগ"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="খুলনা বিভাগ"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="রাজশাহী বিভাগ"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="চট্টগ্রাম বিভাগ"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="বরিশাল বিভাগ"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="ময়মনসিংহ বিভাগ"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="রংপুর বিভাগ"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="সিলেট বিভাগ"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorCard"
+        app:cardCornerRadius="6dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rg_weight"
+                    android:paddingLeft="16dp">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৩৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৪৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৫৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৬৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৭৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৮৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="৯৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১০৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১১৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২১ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২২ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:id="@+id/biodata1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২৩ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২৪ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২৫ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২৬ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২৭ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২৮ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১২৯ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="১৩০ কেজি"
+                        android:paddingLeft="24dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></RadioButton>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
