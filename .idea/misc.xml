@@ -6,11 +6,19 @@
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/border.xml" value="0.1485" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/bottom_nav_background.xml" value="0.1085" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/gradiant_background.xml" value="0.1085" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/gradiant_background_dl.xml" value="0.1865" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/gradiant_background_ld.xml" value="0.1865" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/gradiant_background_mono.xml" value="0.1865" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/ic_arrow_down.xml" value="0.1865" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/ic_arrow_up.xml" value="0.1865" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/ic_heart.xml" value="0.172" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/ic_heart_selected.xml" value="0.172" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/ic_home.xml" value="0.1085" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/ic_user_account.xml" value="0.1485" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/launcher_screen_with_background.xml" value="0.128" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/drawable/rounded_corner_background.xml" value="0.1485" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/activity_complete_profile.xml" value="0.2" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/activity_filter_result.xml" value="0.25" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/activity_phone_login.xml" value="0.22" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/activity_settings.xml" value="0.2" />
@@ -24,15 +32,18 @@
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_f3.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_f4.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_f5.xml" value="0.2" />
-        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_f6.xml" value="0.2" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_f6.xml" value="0.33" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_f7.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_f8.xml" value="0.22" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_f9.xml" value="0.2" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_filter_details.xml" value="0.25" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/bottom_sheet_more.xml" value="0.2" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/featured_image_container.xml" value="0.22" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/filter_result_layout.xml" value="0.25" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_1.xml" value="0.22" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_10.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_11.xml" value="0.2" />
-        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_2.xml" value="0.33" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_2.xml" value="0.25" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_3.xml" value="0.22" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_4.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_5.xml" value="0.33" />
@@ -40,16 +51,20 @@
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_7.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_8.xml" value="0.22" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_9.xml" value="0.33" />
-        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_favourite.xml" value="0.3625" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_profile2.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/fragment_save.xml" value="0.2" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/home_data_container.xml" value="0.3625" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/home_data_layout.xml" value="0.25" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_biodata.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_blood_group.xml" value="0.13425925925925927" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_brother.xml" value="0.25" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_color_of_body.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_current_address.xml" value="0.18991097922848665" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_current_division.xml" value="0.2" />
+        <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_division.xml" value="0.3625" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_education_medium.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_exit.xml" value="0.2" />
         <entry key="..\:/#Work/#Android/Matrimony/app/src/main/res/layout/popup_height.xml" value="0.2" />

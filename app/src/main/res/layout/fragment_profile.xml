@@ -67,7 +67,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_ld">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -112,7 +112,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_dl">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -157,7 +157,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_ld">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -202,7 +202,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_dl">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -247,7 +247,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_ld">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -292,7 +292,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_dl">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -337,7 +337,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_ld">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -382,7 +382,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_dl">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -427,7 +427,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_ld">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -472,7 +472,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_dl">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -517,7 +517,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gradiant_background">
+                            android:background="@drawable/gradiant_background_ld">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -553,7 +553,7 @@
                         android:layout_marginRight="24dp"
                         android:layout_gravity="bottom|center|right"
                         android:layout_marginBottom="24dp"
-                        app:cardBackgroundColor="@color/colorPrimaryDark"
+                        app:cardBackgroundColor="@color/colorGreen"
                         android:elevation="16dp"
                         android:clickable="true"
                         android:foreground="?attr/selectableItemBackground">

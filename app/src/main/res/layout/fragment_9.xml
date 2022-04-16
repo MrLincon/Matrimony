@@ -244,7 +244,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:text="অর্থনৈতিক অবস্থা	*"
+                android:text="অর্থনৈতিক অবস্থা *"
                 android:textColor="@color/colorText"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"

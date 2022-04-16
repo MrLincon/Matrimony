@@ -20,13 +20,14 @@
     <color name="colorBackgroundLayout">#efefef</color>
 
     <color name="colorWhite">#fff</color>
+    <color name="colorGray">#B3FFFFFF</color>
     <color name="colorOffWhite">#efefef</color>
     <color name="colorBlack">#000</color>
     <color name="colorOrange">#ff5722</color>
     <color name="colorRed">#f44336</color>
     <color name="colorPink">#e91e63</color>
     <color name="colorPurple">#673ab7</color>
-    <color name="colorGreen">#4caf50</color>
+    <color name="colorGreen">#388E3C</color>
     <color name="colorGreenLite">#614CAF50</color>
     <color name="colorYellow">#ffeb3b</color>
     <color name="colorBlue">#2196f3</color>

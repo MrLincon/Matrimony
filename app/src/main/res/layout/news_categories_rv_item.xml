@@ -20,7 +20,7 @@
             android:layout_height="50dp"
             android:padding="10dp"
             android:textColor="@color/colorWhite"
-            android:background="@drawable/gradiant_background"
+            android:background="@drawable/gradiant_background_ld"
             android:text="Category"
             android:textSize="15sp" />
 

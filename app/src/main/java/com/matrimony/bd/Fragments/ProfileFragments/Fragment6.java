@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -38,6 +40,8 @@ public class Fragment6 extends Fragment {
     TextInputEditText prayerPerDay, prayerEveryDay, mahramNonMahram, quranReading, mazhabFollowing,
             politicalSight, movieSeries, physicalMentalDisease, religiousAct, followingPir, sightAboutMajar,
             threeIslamicBook, threeFavouriteAlem, specialReligiousQualification, aboutYourself;
+
+    RadioGroup rgPrayerPerDay;
 
     CardView save;
 
@@ -88,6 +92,32 @@ public class Fragment6 extends Fragment {
             }
         });
 
+        prayerPerDay.setFocusable(false);
+
+        prayerPerDay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                popup.setContentView(R.layout.popup_yes_no);
+                popup.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                rgPrayerPerDay = popup.findViewById(R.id.rg_yes_no);
+
+                popup.show();
+
+                rgPrayerPerDay.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+                    @Override
+                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+                        RadioButton radioButton = (RadioButton) group.findViewById(checkedId);
+                        String PrayerPerDay = radioButton.getText().toString();
+
+                        prayerPerDay.setText(PrayerPerDay);
+                        popup.dismiss();
+                    }
+                });
+            }
+        });
 
         loadData();
 

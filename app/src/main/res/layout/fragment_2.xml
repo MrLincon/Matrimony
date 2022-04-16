@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,13 +19,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="বায়োডাটার ধরন *"
-                android:textColor="@color/colorText"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:justificationMode="inter_word"
+                android:text="বায়োডাটার ধরন *"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -42,9 +42,9 @@
                     android:id="@+id/bioDataType"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textNoSuggestions"
                     android:background="@null"
                     android:hint="উত্তর"
+                    android:inputType="textNoSuggestions"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -53,13 +53,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="বৈবাহিক অবস্থা *"
-                android:textColor="@color/colorText"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:justificationMode="inter_word"
+                android:text="বৈবাহিক অবস্থা *"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -73,11 +73,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/maritalCondition"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textNoSuggestions"
-                    android:id="@+id/maritalCondition"
                     android:hint="উত্তর"
+                    android:inputType="textNoSuggestions"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -106,11 +106,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
                     android:id="@+id/permanentAddress"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textNoSuggestions"
                     android:hint="উত্তর"
+                    android:inputType="textNoSuggestions"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -119,13 +119,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:justificationMode="inter_word"
                 android:text="বিভাগ (স্থায়ী) *"
                 android:textColor="@color/colorText"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -139,11 +139,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/permanentDistrict"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textNoSuggestions"
-                    android:id="@+id/permanentDistrict"
                     android:hint="উত্তর"
+                    android:inputType="textNoSuggestions"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -152,13 +152,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:justificationMode="inter_word"
                 android:text="বর্তমান ঠিকানা *"
                 android:textColor="@color/colorText"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -172,11 +172,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/currentAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textNoSuggestions"
                     android:hint="উত্তর"
-                    android:id="@+id/currentAddress"
+                    android:inputType="textNoSuggestions"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -185,13 +185,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:justificationMode="inter_word"
                 android:text="বিভাগ (বর্তমান) *"
                 android:textColor="@color/colorText"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -205,11 +205,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/currentDistrict"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textNoSuggestions"
                     android:hint="উত্তর"
-                    android:id="@+id/currentDistrict"
+                    android:inputType="textNoSuggestions"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -218,13 +218,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:justificationMode="inter_word"
                 android:text="জন্মসন (আসল) *"
                 android:textColor="@color/colorText"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -238,12 +238,12 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/birthDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="উত্তর"
                     android:inputType="number"
                     android:maxLength="4"
-                    android:hint="উত্তর"
-                    android:id="@+id/birthDate"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -252,13 +252,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:justificationMode="inter_word"
                 android:text="গাত্রবর্ণ"
                 android:textColor="@color/colorText"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -272,11 +272,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/colorOfBody"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:id="@+id/colorOfBody"
                     android:hint="উত্তর"
+                    android:inputType="text"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -285,13 +285,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:justificationMode="inter_word"
                 android:text="উচ্চতা"
                 android:textColor="@color/colorText"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -305,11 +305,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/height"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:id="@+id/height"
                     android:hint="উত্তর"
+                    android:inputType="text"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -318,13 +318,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:justificationMode="inter_word"
                 android:text="ওজন"
                 android:textColor="@color/colorText"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -338,11 +338,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/weight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
                     android:hint="উত্তর"
-                    android:id="@+id/weight"
+                    android:inputType="text"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -351,13 +351,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:justificationMode="inter_word"
                 android:text="রক্তের গ্রুপ *"
                 android:textColor="@color/colorText"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -371,11 +371,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/bloodGroup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
                     android:hint="উত্তর"
-                    android:id="@+id/bloodGroup"
+                    android:inputType="text"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -384,13 +384,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:justificationMode="inter_word"
                 android:text="পেশা *"
                 android:textColor="@color/colorText"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -404,11 +404,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/occupation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
                     android:hint="উত্তর"
-                    android:id="@+id/occupation"
+                    android:inputType="text"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -417,13 +417,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="মাসিক আয়"
-                android:textColor="@color/colorText"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="8dp"
-                android:justificationMode="inter_word"></TextView>
+                android:justificationMode="inter_word"
+                android:text="মাসিক আয়"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -437,11 +437,11 @@
                 app:hintTextColor="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/monthlyIncome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
                     android:hint="উত্তর"
-                    android:id="@+id/monthlyIncome"
+                    android:inputType="text"
                     android:textColor="@color/colorText"
                     android:textCursorDrawable="@drawable/cursor_color" />
 
@@ -455,24 +455,24 @@
         android:id="@+id/save"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
-        android:layout_marginRight="24dp"
         android:layout_gravity="bottom|center|right"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="24dp"
-        app:cardBackgroundColor="@color/colorWhite"
         android:clickable="true"
-        android:foreground="?attr/selectableItemBackground">
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="20dp">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Save"
             android:layout_gravity="center"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp"></TextView>
+            android:paddingBottom="8dp"
+            android:text="Save"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"></TextView>
 
     </androidx.cardview.widget.CardView>
 
